@@ -48,25 +48,6 @@ body {
   margin-bottom: 15px;
 }
 
-@media screen and (max-width: 576px) {
-  .main-info,
-  .contact_info_container {
-    flex-direction: column;
-  }
-
-  .contact_info_container {
-    align-items: center;
-  }
-
-  .contact-info__block:not(:last-child) {
-    margin-bottom: 20px;
-  }
-
-  .experiences {
-    margin-right: 0;
-  }
-}
-
 /* Contact Info */
 .contact-info__header,
 .contact-info__sub-header {
@@ -173,7 +154,7 @@ body {
 /* Experience and additional info */
 
 .experiences {
-  flex: 1 1 60%;
+  flex: 1 1 45%;
   margin-right: 50px;
 }
 
@@ -266,6 +247,10 @@ body {
   color: var(--secondary-text-color);
 }
 
+.additional-info__education-university:not(:last-child) {
+  margin-bottom: 30px;
+}
+
 /* Project Experience */
 
 .project {
@@ -288,6 +273,7 @@ body {
 .project__description {
   color: var(--secondary-text-color);
   margin-bottom: 8px;
+  text-align: justify;
 }
 
 .project__name-link {
@@ -311,4 +297,23 @@ body {
 
 .project__github-link:hover {
   color: var(--text-decoration-color);
+}
+
+@media screen and (max-width: 576px) {
+  .main-info,
+  .contact_info_container {
+    flex-direction: column;
+  }
+
+  .contact_info_container {
+    align-items: center;
+  }
+
+  .contact-info__block:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+  .experiences {
+    margin-right: 0;
+  }
 }
